@@ -1,10 +1,12 @@
 package com.example.focus.e_democracy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -38,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                         homeFragment = new Home();
                         fragmentTransaction.replace(R.id.frame_id, homeFragment);
                         getSupportActionBar().setTitle("E-Democracy");
-
                         fragmentTransaction.commit();
                         return true;
                     case R.id.nav_search:
@@ -49,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.nav_create:
                         //setFragment(createFragment);
+                        Intent intent = new Intent(getApplicationContext(), ProjectBuilderActivity.class);
+                        startActivity(intent);
                         return true;
                     case R.id.nav_bookmarks:
                         bookmarksFragment = new Bookmarks();

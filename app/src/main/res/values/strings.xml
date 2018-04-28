@@ -13,6 +13,7 @@
     <string name="Popular">Tab 2</string>
     <string name="Relevant">Tab 3</string>
     <string name="action_settings">Settings</string>
+    <string name="action_next">Next</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <!-- TODO: Rpoject strings -->
     <string name="title_1">Road problem in Tartu</string>

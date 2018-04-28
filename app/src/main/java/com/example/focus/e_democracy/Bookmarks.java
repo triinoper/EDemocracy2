@@ -34,9 +34,9 @@ public class Bookmarks extends Fragment {
         View view = inflater.inflate(R.layout.fragment_bookmarks, container, false);
 
         projectArrayList = new ArrayList<>();
-        projectArrayList.add(new Project(R.string.title_1, "Making manholes level with the road surface", "Anyone using the roads in Tartu will have noticed and felt strong jolts when...", R.drawable.road));
+        //projectArrayList.add(new Project(R.string.title_1, "Making manholes level with the road surface", "Anyone using the roads in Tartu will have noticed and felt strong jolts when...", R.drawable.road));
         projectArrayList.add(new Project(R.string.title_2, "Tracks would run along the river bank starting from...", "987654321", R.drawable.tracks));
-        projectArrayList.add(new Project(R.string.title_3, "There is a beach area on the left bank of the river...", "789456123", R.drawable.beach));
+        //projectArrayList.add(new Project(R.string.title_3, "There is a beach area on the left bank of the river...", "789456123", R.drawable.beach));
         projectArrayList.add(new Project(R.string.title_4, "A modern ice resurfacer would ensure the preservation of...", "321654987", R.drawable.icemashine));
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view_search_Id);
