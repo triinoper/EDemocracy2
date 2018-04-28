@@ -9,18 +9,18 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.EmployeeViewHolder> {
+public class ProjectAdapterSearch extends RecyclerView.Adapter<ProjectAdapterSearch.EmployeeViewHolder> {
 
     private ArrayList<Project> dataList;
 
-    public ProjectAdapter(ArrayList<Project> dataList) {
+    public ProjectAdapterSearch(ArrayList<Project> dataList) {
         this.dataList = dataList;
     }
 
     @Override
     public EmployeeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.home_project, parent, false);// was home_project
+        View view = layoutInflater.inflate(R.layout.small_project, parent, false);// was home_project
         return new EmployeeViewHolder(view);
     }
 
@@ -28,7 +28,6 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.Employee
     public void onBindViewHolder(EmployeeViewHolder holder, int position) {
         holder.txtProjectTitle.setText(dataList.get(position).getEmployeeName());
         holder.txtProjectShortDescription.setText(dataList.get(position).getEmployeeEmail());
-        holder.txtProjectLongDescription.setText(dataList.get(position).getEmployeePhone());
         holder.imgProject.setImageResource(dataList.get(position).getProjectImage());
 
     }
@@ -40,15 +39,15 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.Employee
 
     class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtProjectTitle, txtProjectShortDescription, txtProjectLongDescription;
+        TextView txtProjectTitle, txtProjectShortDescription;
         ImageView imgProject;
 
         EmployeeViewHolder(View itemView) {
             super(itemView);
+            imgProject = (ImageView) itemView.findViewById(R.id.imageView);
             txtProjectTitle = (TextView) itemView.findViewById(R.id.txt_project_title);
             txtProjectShortDescription = (TextView) itemView.findViewById(R.id.txt_project_short_description);
-            txtProjectLongDescription = (TextView) itemView.findViewById(R.id.txt_project_long_description);
-            imgProject = (ImageView) itemView.findViewById(R.id.imageView);
+
         }
     }
 }

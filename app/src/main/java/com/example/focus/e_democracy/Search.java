@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Search extends Fragment {
 
     private RecyclerView recyclerView;
-    private ProjectAdapter adapter;
+    private ProjectAdapterSearch adapter;
     private ArrayList<Project> projectArrayList;
 
     public Search() {
@@ -41,7 +41,7 @@ public class Search extends Fragment {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view_search_Id);
 
-        adapter = new ProjectAdapter(projectArrayList);
+        adapter = new ProjectAdapterSearch(projectArrayList);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
 

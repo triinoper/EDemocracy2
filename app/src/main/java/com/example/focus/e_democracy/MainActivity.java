@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Home homeFragment;
     private Search searchFragment;
+    private Bookmarks bookmarksFragment;
     private BottomNavigationView mMainNav;
 
     @Override
@@ -35,18 +36,24 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_home :
                         homeFragment = new Home();
                         fragmentTransaction.replace(R.id.frame_id, homeFragment);
+                        getSupportActionBar().setTitle("E-Democracy");
+
                         fragmentTransaction.commit();
                         return true;
                     case R.id.nav_search:
                         searchFragment = new Search();
                         fragmentTransaction.replace(R.id.frame_id, searchFragment);
+                        getSupportActionBar().setTitle("Search proposals");
                         fragmentTransaction.commit();
                         return true;
                     case R.id.nav_create:
                         //setFragment(createFragment);
                         return true;
                     case R.id.nav_bookmarks:
-                        //setFragment(bookmarksFragment);
+                        bookmarksFragment = new Bookmarks();
+                        fragmentTransaction.replace(R.id.frame_id, bookmarksFragment);
+                        getSupportActionBar().setTitle("Bookmarks");
+                        fragmentTransaction.commit();
                         return true;
                     case R.id.nav_profile:
                         return true;
