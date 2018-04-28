@@ -47,20 +47,7 @@ public class Home extends Fragment {
 
         recyclerView.setAdapter(adapter);
         return view;
-        //----------------------good code below
-        //View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        //RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view_home_Id);
-
-        //ListAdapter listAdapter = new ListAdapter();
-
-        //recyclerView.setAdapter(listAdapter);
-        //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        //recyclerView.setLayoutManager(layoutManager);
-
-
-        //
-        //return inflater.inflate(R.layout.cardview_layout, container, false);
     }
 
 }

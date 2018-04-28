@@ -11,12 +11,12 @@
         android:id="@+id/recycler_view_search_Id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="64dp" />
 
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:queryHint="Write something" >
+        android:queryHint="Write something">
 
     </SearchView>
 

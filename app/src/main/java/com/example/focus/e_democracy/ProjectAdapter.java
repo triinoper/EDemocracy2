@@ -20,7 +20,7 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.Employee
     @Override
     public EmployeeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.row_project, parent, false);
+        View view = layoutInflater.inflate(R.layout.row_project, parent, false);// was row_project
         return new EmployeeViewHolder(view);
     }
 
