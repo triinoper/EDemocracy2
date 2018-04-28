@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Home homeFragment;
     private Search searchFragment;
     private Bookmarks bookmarksFragment;
+    private Profile profileFragment;
     private BottomNavigationView mMainNav;
 
     @Override
@@ -56,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.commit();
                         return true;
                     case R.id.nav_profile:
+                        profileFragment = new Profile();
+                        fragmentTransaction.replace(R.id.frame_id, profileFragment);
+                        getSupportActionBar().setTitle("Profile");
+                        fragmentTransaction.commit();
                         return true;
                     default:
                         return false;
