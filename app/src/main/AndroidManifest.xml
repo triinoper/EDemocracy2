@@ -24,6 +24,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.focus.e_democracy.MainActivity" />
         </activity>
+        <activity android:name=".ProjectBuilderPageTwo">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.focus.e_democracy.ProjectBuilderActivity" />
+        </activity>
     </application>
 
 </manifest>
