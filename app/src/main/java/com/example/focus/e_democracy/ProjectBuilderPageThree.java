@@ -2,36 +2,28 @@ package com.example.focus.e_democracy;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
-public class ProjectBuilderPageTwo extends AppCompatActivity {
+public class ProjectBuilderPageThree extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_createproject2);
+        setContentView(R.layout.fragment_createproject3);
         getSupportActionBar().setTitle("Create proposal");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //add location button code
-
-        //take a photo button code
-        final ImageView takePhoto = findViewById(R.id.take_photo_id);
-        takePhoto.setOnClickListener(new View.OnClickListener() {
+        final Button PublishButton = findViewById(R.id.btn_publish);
+        PublishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final int REQUEST_IMAGE_CAPTURE = 1;
-                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-                        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-                    }
-                }
-
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
         });
 
     }
@@ -39,6 +31,8 @@ public class ProjectBuilderPageTwo extends AppCompatActivity {
     public boolean onCreateOptionsMenu( Menu menu )
     {
         getMenuInflater().inflate( R.menu.menu_tabbed, menu );
+        MenuItem next = menu.findItem(R.id.next);
+        next.setVisible(false);
         return true;
     }
 
@@ -49,11 +43,13 @@ public class ProjectBuilderPageTwo extends AppCompatActivity {
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
-            case R.id.next:
-                Intent intent = new Intent(getApplicationContext(), ProjectBuilderPageThree.class);
-                startActivity(intent);
-                return true;
+            //case R.id.next:
+                //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                //startActivity(intent);
+                //return true;
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

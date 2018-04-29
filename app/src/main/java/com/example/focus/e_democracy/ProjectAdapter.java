@@ -48,7 +48,7 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.Employee
             txtProjectTitle = (TextView) itemView.findViewById(R.id.txt_project_title);
             txtProjectShortDescription = (TextView) itemView.findViewById(R.id.txt_project_short_description);
             txtProjectLongDescription = (TextView) itemView.findViewById(R.id.txt_project_long_description);
-            imgProject = (ImageView) itemView.findViewById(R.id.imageView);
+            imgProject = (ImageView) itemView.findViewById(R.id.take_photo_id);
         }
     }
 }

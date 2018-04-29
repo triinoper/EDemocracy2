@@ -17,7 +17,7 @@
 
         <!-- TextView Project Name -->
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/take_photo_id"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:adjustViewBounds="false"

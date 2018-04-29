@@ -44,7 +44,7 @@ public class ProjectAdapterSearch extends RecyclerView.Adapter<ProjectAdapterSea
 
         EmployeeViewHolder(View itemView) {
             super(itemView);
-            imgProject = (ImageView) itemView.findViewById(R.id.imageView);
+            imgProject = (ImageView) itemView.findViewById(R.id.take_photo_id);
             txtProjectTitle = (TextView) itemView.findViewById(R.id.txt_project_title);
             txtProjectShortDescription = (TextView) itemView.findViewById(R.id.txt_project_short_description);
 

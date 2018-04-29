@@ -30,6 +30,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.focus.e_democracy.ProjectBuilderActivity" />
         </activity>
-    </application>
+        <activity android:name=".ProjectBuilderPageThree">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.focus.e_democracy.ProjectBuilderPageTwo" />
+        </activity>
 
+    </application>
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
 </manifest>
