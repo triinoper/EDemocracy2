@@ -28,5 +28,16 @@
     <string name="long_description_2">Hello World from section: %1$d</string>
     <string name="long_description_3">Hello World from section: %1$d</string>
     <string name="long_description_4">Hello World from section: %1$d</string>
+    <!-- TODO: Array of categories -->
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 
 </resources>
