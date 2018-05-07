@@ -16,9 +16,9 @@
     <string name="action_next">Next</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <!-- TODO: Rpoject strings -->
-    <string name="title_1">Road problem in Tartu</string>
-    <string name="title_2">Tracks on the banks:</string>
-    <string name="title_3">Sprucing up the beach area on the Emajõgi River</string>
+    <string name="title_1">Road problem in Tartu.</string>
+    <string name="title_2">Tracks on the banks.</string>
+    <string name="title_3">Sprucing up the beach area on the Emajõgi River.</string>
     <string name="title_4">Ice resurfacer for Tartu\'s...</string>
     <string name="short_description_1">Making manholes level with the road surface:</string>
     <string name="short_description_2">Tracks on the banks of the Emajõgi River and in Tähtvere Dendropark: </string>
@@ -30,14 +30,16 @@
     <string name="long_description_4">Hello World from section: %1$d</string>
     <!-- TODO: Array of categories -->
     <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Agriculture</item>
+        <item>Landscape</item>
+        <item>Structures</item>
+        <item>Lightning</item>
+        <item>Maintenance</item>
+        <item>Education</item>
+        <item>Transport</item>
+        <item>Living</item>
+        <item>Entertainment</item>
+        <item>Special needs</item>
     </string-array>
 
 </resources>
