@@ -76,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //pressing on the card leads to the full card view
+
+
     }
 
 }

@@ -50,6 +50,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.focus.e_democracy.MainActivity" />
         </activity>
+        <activity android:name=".ProjectDetailsActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.focus.e_democracy.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

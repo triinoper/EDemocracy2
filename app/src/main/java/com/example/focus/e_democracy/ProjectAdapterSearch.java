@@ -1,5 +1,6 @@
 package com.example.focus.e_democracy;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,6 +48,14 @@ public class ProjectAdapterSearch extends RecyclerView.Adapter<ProjectAdapterSea
             imgProject = (ImageView) itemView.findViewById(R.id.take_photo_id);
             txtProjectTitle = (TextView) itemView.findViewById(R.id.txt_project_title);
             txtProjectShortDescription = (TextView) itemView.findViewById(R.id.txt_project_short_description);
+            //---lets try click on project
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    v.getContext().startActivity(new Intent(v.getContext(), ProjectDetailsActivity.class));
+                }
+            });
+            //---lets try click on project end
 
         }
     }
