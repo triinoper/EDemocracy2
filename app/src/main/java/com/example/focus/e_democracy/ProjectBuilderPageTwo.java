@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
@@ -45,6 +46,15 @@ public class ProjectBuilderPageTwo extends AppCompatActivity {
                     }
                 }
 
+        });
+        final Button AddLocationButton = findViewById(R.id.addLocationButton);
+        AddLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+
+                startActivity(intent);
+            }
         });
 
     }

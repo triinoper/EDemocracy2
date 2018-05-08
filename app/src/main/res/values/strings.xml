@@ -44,5 +44,6 @@
         <item>Entertainment</item>
         <item>Special needs</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
