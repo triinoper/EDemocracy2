@@ -28,6 +28,9 @@
     <string name="long_description_2">Hello World from section: %1$d</string>
     <string name="long_description_3">Hello World from section: %1$d</string>
     <string name="long_description_4">Hello World from section: %1$d</string>
+
+
+    <string name="notification_info">Switching on push notifications allows you to stay aware of the new projects and voting deadlines. We will notify you only about the projects, that mach your interests.</string>
     <!-- TODO: Array of categories -->
     <string-array name="planets_array">
         <item>Agriculture</item>
